@@ -40,36 +40,25 @@
 
 <body class="h-100">
     <div class="container h-100">
-        <div class="row justify-content-center align-items-center h-100">
-            <div class="col-12 d-flex justify-content-between">
-                <button class="box  d-flex justify-content-center d-flec align-items-center rounded-circle" onclick="add()" id="sum">
+        <div class="row align-items-center justify-content-center  h-100">
+            <div class="col-4 text-center">
+                <button class="box rounded-circle" onclick="add()" id="sum">
                     <i class="fas fa-plus text-white"></i>
                 </button>
-                <div class="box bg-warning d-flex justify-content-center d-flec align-items-center rounded-circle">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div class="box bg-warning d-flex justify-content-center align-items-center rounded-circle">
                     <h1 id="num" class="font text-white">0</h1>
                 </div>
-                <button class="box d-flex justify-content-center d-flec align-items-center rounded-circle" onclick="minus()" id="sub">
-                    <i class="fas fa-minus text-white"></i>
+            </div>
+            <div class="col-4 text-center">
+                <button class="box  rounded-circle" onclick="minus()" id="sub">
+                        <i class="fas fa-minus text-white"></i>
                 </button>
             </div>
         </div>
     </div>
-    <script>
-        var number = 0;
-        var myh1 = document.getElementById("num");
-
-        function add() {
-            number = number + 1;
-            myh1.innerHTML = number;
-        }
-
-        function minus() {
-            if (number > 0) {
-                number = number - 1;
-                myh1.innerHTML = number;
-            }
-
-        }
+    <script src="js/script.js">
     </script>
 </body>
 
