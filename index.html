@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <style>
+        .fas {
+            font-size: 50px;
+        }
+        
+        .font {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body class="h-100">
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 d-flex justify-content-between">
+                <button type="button" class="bg-warning border-0 p-5" onclick="add()" id="sum">
+                    <i class="fas fa-plus text-white" ></i>
+                </button>
+                <button type="button" class="bg-warning border-0 p-5" id="sub" onclick="minus()">
+                        <i class="fas fa-minus text-white"></i>
+                </button>
+                <h1 id="num" class="font"></h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        var number = 0;
+        var myh1 = document.getElementById("num");
+
+        function add() {
+            number = number + 1;
+            myh1.innerHTML = number;
+        }
+
+        function minus() {
+            number = number - 1;
+            myh1.innerHTML = number;
+        }
+    </script>
+</body>
+
+</html>
