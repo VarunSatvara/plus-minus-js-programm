@@ -35,7 +35,7 @@
                     <i class="fas fa-plus text-white"></i>
                 </div>
                 <div class="box bg-warning d-flex justify-content-center d-flec align-items-center rounded-circle">
-                    <h1 id="num" class="font text-white"></h1>
+                    <h1 id="num" class="font text-white">0</h1>
                 </div>
                 <div class="box bg-warning d-flex justify-content-center d-flec align-items-center rounded-circle" onclick="minus()" id="sub">
                     <i class="fas fa-minus text-white"></i>
@@ -53,8 +53,11 @@
         }
 
         function minus() {
-            number = number - 1;
-            myh1.innerHTML = number;
+            if (number > 0) {
+                number = number - 1;
+                myh1.innerHTML = number;
+            }
+
         }
     </script>
 </body>
