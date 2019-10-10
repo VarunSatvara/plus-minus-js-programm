@@ -20,11 +20,22 @@
         }
         
         .box {
-            height: 150px;
-            width: 150px;
-            background-color: #fce305;
+            height: 200px;
+            width: 200px;
+            background-color: #fcd12a;
+        }
+        
+        .box-btn {
+            height: 200px;
+            width: 200px;
             border: 0;
-            outline: none;
+            display: inline-block;
+            padding: 0.5em 1em;
+            background: #668ad8;
+            color: #4868ad;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+            border-bottom: solid 1px #627295;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
         }
         
         .box:focus {
@@ -35,6 +46,16 @@
             background-color: #fcd12a;
             outline: none;
         }
+        
+        .box-btn:focus {
+            outline: none;
+        }
+        
+        .box-btn:active {
+            transform: translateY(4px);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+            border-bottom: none;
+        }
     </style>
 </head>
 
@@ -42,8 +63,8 @@
     <div class="container h-100">
         <div class="row align-items-center justify-content-center  h-100">
             <div class="col-12 col-md-4 text-center py-4 py-md-0">
-                <button class="box rounded-circle" onclick="add()" id="sum">
-                    <i class="fas fa-plus text-white"></i>
+                <button class="box-btn rounded-circle" onclick="add()" id="sum">
+                    <i class="fas fa-plus"></i>
                 </button>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center  py-4 py-md-0">
@@ -52,8 +73,8 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 text-center  py-4 py-md-0">
-                <button class="box  rounded-circle" onclick="minus()" id="sub">
-                        <i class="fas fa-minus text-white"></i>
+                <button class="box-btn  rounded-circle" onclick="minus()" id="sub">
+                        <i class="fas fa-minus"></i>
                 </button>
             </div>
         </div>
